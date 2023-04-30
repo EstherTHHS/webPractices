@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    background-color: #f7e0da;
+}
+
+.navbar,
+span {
+    padding: 20px 60px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: medium;
+    background-color: #6a45d8;
+}
+
+.navbar_1 {
+    text-decoration: underline;
+}
+
+.btn1 {
+    color: white;
+    padding: 6px 9px;
+    border: 2px whitesmoke solid;
+    border-radius: 25px;
+}
+
+img {
+    width: 100%;
+}
+
+h3 {
+    text-decoration: underline;
+    color: rgb(223, 185, 140);
+}
+
+table {
+    width: 100%;
+    border-spacing: 50px 20px;
+}
+
+.pack1 {
+    width: 50%;
+    border: whitesmoke;
+    border-width: 1px;
+    border-radius: 20px;
+    background-color: #6a45d8;
+    text-align: center;
+}
+
+.pack2 {
+    width: 50%;
+    border-width: 20px;
+    margin: 0 50px 30px;
+    border: whitesmoke;
+    border-radius: 20px;
+    background-color: #6a45d8;
+    text-align: center;
+}
+
+.pack3 {
+    width: 50%;
+    border: whitesmoke;
+    border-radius: 20px;
+    background-color: #6a45d8;
+    text-align: center;
+}
+
+.pack4 {
+    width: 50%;
+    border: whitesmoke;
+    border-radius: 20px;
+    background-color: #6a45d8;
+    text-align: center;
+}
+
+.bottom-container {
+    padding: 20px 50px;
+    background-color: #6a45d8;
+    text-align: center;
+}
+
+button {
+    border-radius: 20px;
+    border: white solid 2px;
+    width: 160px;
+    padding: 5px 30px;
+    color: rgb(223, 185, 140);
+    background-color: #6a45d8;
+}
+
+.pack1_1 {
+    color: rgb(197, 47, 47);
+}
+
+.pack2_2,
+.pack3_3,
+.pack4_4 {
+    color: gold;
+}
+
+p {
+    color: whitesmoke;
+}

@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: wheat;
+}
+
+.register {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    margin: 10px auto;
+    width: 480px;
+    height: 520px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid grey;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.line {
+    height: 15px;
+}
+
+.title {
+    padding: 20px;
+    font-size: 30px;
+    color: tomato;
+}
+
+.ptip {
+    visibility: visible;
+    color: red;
+}
+
+input {
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: solid;
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+#pwd:placeholder-shown~.ptip {
+    visibility: hidden;
+}
+
+#chk1,
+#chk2,
+#chk3 {
+    width: 100px;
+    height: 15px;
+}
+
+.free {
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: teal;
+    color: white;
+    margin-top: 10px;
+    display: none;
+}
+
+.gold {
+    width: 350px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: gold;
+    margin-top: 10px;
+    display: none;
+}
+
+.diamond {
+    width: 450px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: wheat;
+    margin-top: 10px;
+    display: none;
+}
+
+#chk1:checked~.free {
+    display: block;
+}
+
+#chk2:checked~.gold {
+    display: block;
+}
+
+#chk3:checked~.diamond {
+    display: block;
+}
+
+.btn {
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 12px;
+    border: 1px solid gray;
+    font-size: 17px;
+}
+
+.can {
+    width: 100px;
+    background-color: white;
+    color: black;
+    float: left;
+}
+
+.reg {
+    width: 300px;
+    background-color: white;
+    color: black;
+    float: right;
+}
+
+.can:hover {
+    background-color: red;
+    color: white;
+}
+
+.reg:hover {
+    background-color: deepskyblue;
+    color: white;
+}
+
+.btn {
+    padding: 10px;
+    margin: 15px;
+}

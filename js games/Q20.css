@@ -1,0 +1,92 @@
+:root {
+  --bgcolor1: pink;
+  --bgcolor2: rgb(230, 85, 85);
+  --bgcolor3: black;
+  --bgcolor4: red;
+  --bgcolor5: teal;
+  --bgcolor6: cyan;
+  --bgcolor7: gray;
+  --font-family: "Inter", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+}
+.screen {
+  background-color: var(--bgcolor1);
+  height: 60%;
+}
+h3 {
+  text-align: center;
+  padding: 1em;
+}
+.bar {
+  width: 80%;
+  height: 3em;
+  margin-bottom: 1em;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: var(--bgcolor2);
+  color: var(--bgcolor2); */
+  border-style: solid;
+  border-radius: 8px;
+  border-color: var(--bgcolor3);
+}
+p {
+  text-align: center;
+  color: var(--bgcolor4);
+  margin-bottom: 0.5em;
+  font-size: 15px;
+  font-weight: bold;
+}
+.bar1 {
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bgcolor2);
+  color: var(--bgcolor2);
+  border-style: solid;
+  border-style: solid;
+  border-radius: 8px;
+  border-color: var(--bgcolor3);
+}
+.btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  margin: 1em;
+  font-size: 10px;
+}
+button {
+  padding: 0.5em;
+  margin: 0.5em;
+  color: var(--bgcolor2);
+  background-color: var(--bgcolor5);
+  border-radius: 8px;
+  margin-bottom: 2em;
+  border-style: none;
+}
+.keyboard {
+  background-color: var(--bgcolor7);
+}
+.keyboard > button {
+  width: 4em;
+  height: 2em;
+  margin-bottom: 1em;
+}
+#n1 {
+  width: 10em;
+}
+#n12 {
+  width: 10em;
+}

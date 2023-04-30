@@ -1,0 +1,12 @@
+* {
+  background-color: cornsilk;
+  color: coral;
+}
+
+.myborder {
+  border: 3px solid coral;
+}
+
+img {
+  width: 30px;
+}

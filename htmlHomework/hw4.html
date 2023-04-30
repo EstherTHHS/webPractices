@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request Form</title>
+    <link rel="stylesheet" href="style4.css" />
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>
+                <h2>Request Form</h2>
+            </legend>
+            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F07%2F20%2Forange-cats-1070960066-1-2000.jpg" alt="cat picture" width="250" />
+            <h1><em>User Information</em></h1>
+            <div>
+                <label for="date">Register DateTime </label>
+                <input type="text" id="date" name="registerDate" value="2021/06/04 12:00 AM " disabled />
+            </div>
+
+            <div>
+                <label for="text">User Name:</label>
+                <input type="text" id="text" placeholder="john1234" required />
+            </div>
+
+            <div>
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" />
+            </div>
+
+            <div>
+                <label for="Age">Age:</label>
+                <input type="number" name="age" id="Age" min="1" max="100" />
+            </div>
+
+            <div>
+                <label for="Gender">Gender:</label>
+                <select name="gender" id="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="edu">Education:</label>
+                <input type="radio" id="edu" name="type" value="UnderGraduate" /> Under Graduated
+                <input type="radio" id="edu" name="type" value="Bachelor" /> Bachelor
+                <input type="radio" id="edu" name="type" value="Master" />Master
+            </div>
+
+            <div>
+                <label for="check">Card:</label>
+                <input type="checkbox" id="check" name="check1" value="CarLicense" /> Car license
+                <input type="checkbox" id="check" name="check2" value="Passport" />Passport
+                <input type="checkbox" id="check" name="check3" value="NRC" checked />NRC
+            </div>
+
+            <div>
+                <label for="choice">Hobby:</label>
+                <input list="hobby-choices" name="hobby-list" id="choice" />
+                <datalist id="hobby-choices">
+                    <option value="Football">Football</option>
+                    <option value="Pro Gamer">Pro Gamer</option>
+                    <option value="Reading">Reading</option>
+                    <option value="Developer">Developer</option>
+                </datalist>
+            </div>
+            <div>
+                <label for="file">Upload Your File</label>
+                <input type="file" name="File" id="file" />
+            </div>
+            <div>
+                <label for="address">Address:</label>
+                <textarea name="youraddress" id="address" cols="30" rows="3"></textarea>
+            </div>
+
+            <div>
+                <input class="btn1" type="reset" value="Default" />
+                <input class="btn2" type="submit" value="Send" />
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

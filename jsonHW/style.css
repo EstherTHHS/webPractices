@@ -1,0 +1,17 @@
+body {
+  background-image: linear-gradient(to right, #d5dde1, #84d9ff);
+}
+
+.girlfloat {
+  float: left;
+}
+
+p {
+  color: white;
+}
+
+.box1 {
+  /* background-color: #ff2c61a4; */
+  border-radius: 12px;
+  padding: 10px;
+}

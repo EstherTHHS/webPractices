@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    font-family: serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+    color: rgb(138, 86, 23);
+}
+
+.btnstart {
+    float: left;
+    width: 20%;
+    height: 40px;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+}
+
+.btnstop {
+    float: right;
+    width: 20%;
+    height: 40px;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+}
+
+.activestart {
+    background-color: rgb(122, 201, 122);
+}
+
+.inactivestart {
+    background-color: gray;
+}
+
+.activestop {
+    background-color: red;
+}
+
+.inactivestop {
+    background-color: gray;
+}
+
+.body {
+    clear: both;
+    margin: 50px;
+}
+
+.question {
+    float: left;
+    margin: 10px;
+    width: 40%;
+    height: 40px;
+    width: 2px solid black;
+    color: tomato;
+}
+
+#q1 {
+    color: black;
+    font-size: 16px;
+}
+
+#okbtn {
+    float: right;
+    margin-top: 20px;
+    background-color: blueviolet;
+    color: white;
+    width: 40%;
+    height: 26px;
+}
+
+.list {
+    clear: both;
+}

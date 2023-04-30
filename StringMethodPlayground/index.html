@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Method Playground</title>
+    <link rel="stylesheet" href="style.css" />
+   <script src="./script.js" defer></script>
+   <script src="https://kit.fontawesome.com/02ed8445d5.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1 class="header">String Method Playground</h1>
+    <!-- Type Input Box -->
+    <div id="type_input"></div>
+    <!-- Input Answer -->
+    <div class="input_answer">
+      <h3 id="answer_label">Answer</h3>
+      <div id="answer_box"></div>
+    </div>
+    <!-- Input Box -->
+    <div class="input_box">
+      <p class="input_alert">
+        Tpye Number for charAt,
+        charCodeAt,includes,indexOf,lastindexOf,startsWith,endsWith
+      </p>
+      <span>Input Box</span>
+      <input type="text" id="data" placeholder="Type Here" />
+    </div>
+    <!-- Funciton buttons -->
+    <div class="function">
+      <button onclick="char_At()" class="function_btn">charAt()</button>
+      <button onclick="char_Code_At()" class="function_btn">
+        charCodeAt()
+      </button>
+      <button onclick="to_UpperCase()" class="function_btn">
+        to UpperCase
+      </button>
+      <button onclick="to_LowerCase()" class="function_btn">
+        to LowerCase
+      </button>
+      <button onclick="Trim()" class="function_btn">trim()</button>
+      <button onclick="Includes()" class="function_btn">includes()</button>
+      <button onclick="index_Of()" class="function_btn">indexOf()</button>
+      <button onclick="last_index_Of()" class="function_btn">
+        lastindexOf()
+      </button>
+      <button onclick="starts_With()" class="function_btn">startsWith()</button>
+      <button onclick="ends_With()" class="function_btn">endsWith()</button>
+    </div>
+    <!-- Keyboard -->
+    <div class="keyboard">
+      <div class="number_box">
+        <button id="1" onclick="number(this)" class="number">1</button>
+        <button id="2" onclick="number(this)" class="number">2</button>
+        <button id="3" onclick="number(this)" class="number">3</button>
+        <button id="4" onclick="number(this)" class="number">4</button>
+        <button id="5" onclick="number(this)" class="number">5</button>
+        <button id="6" onclick="number(this)" class="number">6</button>
+        <button id="7" onclick="number(this)" class="number">7</button>
+        <button id="8" onclick="number(this)" class="number">8</button>
+        <button id="9" onclick="number(this)" class="number">9</button>
+        <button id="0" onclick="number(this)" class="number">0</button>
+      </div>
+      <div class="first_line_alphabet">
+        <button id="Q" onclick="alphabet(this)" class="alphabet">q</button>
+        <button id="W" onclick="alphabet(this)" class="alphabet">w</button>
+        <button id="E" onclick="alphabet(this)" class="alphabet">e</button>
+        <button id="R" onclick="alphabet(this)" class="alphabet">r</button>
+        <button id="T" onclick="alphabet(this)" class="alphabet">t</button>
+        <button id="Y" onclick="alphabet(this)" class="alphabet">y</button>
+        <button id="U" onclick="alphabet(this)" class="alphabet">u</button>
+        <button id="I" onclick="alphabet(this)" class="alphabet">i</button>
+        <button id="O" onclick="alphabet(this)" class="alphabet">o</button>
+        <button id="P" onclick="alphabet(this)" class="alphabet">p</button>
+      </div>
+      <div class="second_line_alphabet">
+        <button id="A" onclick="alphabet(this)" class="alphabet">a</button>
+        <button id="S" onclick="alphabet(this)" class="alphabet">s</button>
+        <button id="D" onclick="alphabet(this)" class="alphabet">d</button>
+        <button id="F" onclick="alphabet(this)" class="alphabet">f</button>
+        <button id="G" onclick="alphabet(this)" class="alphabet">g</button>
+        <button id="H" onclick="alphabet(this)" class="alphabet">h</button>
+        <button id="J" onclick="alphabet(this)" class="alphabet">j</button>
+        <button id="K" onclick="alphabet(this)" class="alphabet">k</button>
+        <button id="L" onclick="alphabet(this)" class="alphabet">l</button>
+      </div>
+      <div class="third_line_alphabet">
+        <!-- Caps_Lock -->
+        <input type="checkbox" id="checkbox" />
+        <label for="radio" id="caps_lock" onclick="caps_Lock()">
+          <span id="caps_lock_text">Caps Lock</span>
+          <!-- Icon -->
+          <span id="caps_lock_icon">
+            <i class="fa-solid fa-arrow-up"></i>
+          </span>
+        </label>
+        <button id="Z" onclick="alphabet(this)" class="alphabet">z</button>
+        <button id="X" onclick="alphabet(this)" class="alphabet">x</button>
+        <button id="C" onclick="alphabet(this)" class="alphabet">c</button>
+        <button id="V" onclick="alphabet(this)" class="alphabet">v</button>
+        <button id="B" onclick="alphabet(this)" class="alphabet">b</button>
+        <button id="N" onclick="alphabet(this)" class="alphabet">n</button>
+        <button id="M" onclick="alphabet(this)" class="alphabet">m</button>
+        <!-- Clear Button -->
+        <button id="clear" onclick="Clear()">
+          <span class="clear">Clear</span>
+          <!-- Icon -->
+          <span>
+            <i class="fa-solid fa-arrow-left" id="backspace_icon"></i>
+          </span>
+        </button>
+      </div>
+      <div class="space">
+        <button id="space" onclick="space()">space</button>
+      </div>
+    </div>
+  </body>
+</html>

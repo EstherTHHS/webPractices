@@ -1,0 +1,67 @@
+* {
+    font-family: "Pacifico", cursive;
+}
+
+#title {
+    background-color: #f9f9c5;
+    background-image: url(./view0.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mycustomNav {
+    padding: 3% 7%;
+}
+
+.mynavBarBrand {
+    color: #f9f9c5 !important;
+    font-size: 1.3rem;
+}
+
+.mynav-link {
+    font-family: "Inter", sans-serif;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.mynav-link:hover {
+    background-color: #dbac01;
+    text-decoration: overline;
+}
+
+.mytitle {
+    margin-top: 10px;
+    padding: 3% 7%;
+}
+
+.myHome {
+    text-decoration: underline;
+}
+
+.customfont {
+    font-family: "Inter", sans-serif;
+}
+
+#features {
+    padding: 5% 7%;
+}
+
+.myFeatures :hover {
+    background-color: #dbac01;
+}
+
+#explore {
+    background-color: #f9f9c5;
+    padding: 3% 7%;
+}
+
+.exploreTitle {
+    color: #dbac01;
+}
+
+.carousel-item {
+    padding: 0 20%;
+    min-width: 100% !important;
+    text-align: center;
+}

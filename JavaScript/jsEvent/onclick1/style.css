@@ -1,0 +1,9 @@
+div {
+    width: 300px;
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: #70eadb;
+    font-size: large;
+    color: rgb(165, 42, 95);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}

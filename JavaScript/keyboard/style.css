@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --allcolor: #a3b1c6;
+}
+
+body {
+    background-color: var(--allcolor);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1200px;
+    height: 750px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: antiquewhite; */
+}
+
+.first-box {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.3), -8px -8px 15px rgb(245, 245, 245, 0.25);
+}
+
+.datainput {
+    width: 650px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+    font-size: 32px;
+}
+
+.enternum {
+    width: 200px;
+    /* position: absolute;
+    top: 3vh; */
+    color: white;
+    margin: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    border: 10px solid var(--allcolor);
+    background-color: var(--allcolor);
+    box-shadow: 8px 8px 15px rgb(0, 0, 0, 0.3), -5px -5px 15px rgb(245, 245, 245, 0.25), 8px 8px 15px rgb(0, 0, 0, 0.25) inset;
+}
+
+.changemethod {
+    text-align: center;
+    width: auto;
+    height: 50px;
+    border-radius: 10px;
+    border: 10px solid var(--allcolor);
+    background-color: var(--allcolor);
+    box-shadow: 3px 3px 15px rgb(0, 0, 0, 0.3), -5px -5px 15px rgb(245, 245, 245, 0.25), 5px 5px 10px rgb(0, 0, 0, 0.25);
+}
+
+.changemethod:focus {
+    color: white;
+    box-shadow: 3px 3px 15px rgb(0, 0, 0, 0.3), -5px -5px 15px rgb(245, 245, 245, 0.25), 5px 5px 10px rgb(0, 0, 0, 0.25) inset;
+}
+
+.keyboard {
+    position: relative;
+    top: 20vh;
+    height: 350px;
+    width: 900px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.3), -8px -8px 15px rgb(245, 245, 245, 0.25);
+}
+
+.btn {
+    height: 60px;
+    width: 60px;
+    font-size: 16px;
+    margin: 6px;
+    padding: 4px;
+    text-align: center;
+    font-family: serif;
+    border-radius: 10px;
+    border: 5px solid var(--allcolor);
+    box-shadow: 3px 3px 15px rgb(0, 0, 0, 0.3), -5px -5px 15px rgb(245, 245, 245, 0.25);
+    background-color: var(--allcolor);
+}
+
+.btn:focus {
+    color: white;
+    box-shadow: 3px 3px 15px rgb(0, 0, 0, 0.3), -5px -5px 15px rgb(245, 245, 245, 0.25), 5px 5px 10px rgb(0, 0, 0, 0.25) inset;
+}
+
+.spacebar {
+    width: 300px;
+    height: 45px;
+    border-radius: 10px;
+    border: 5px solid var(--allcolor);
+}
+
+.clrBtn {
+    width: 200px;
+}
+
+#check:checked~.btn {
+    text-transform: uppercase;
+}

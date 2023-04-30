@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,600");
+:root {
+    --background: rgba(0, 214, 170, 0.8);
+    --border-color: rgb(141, 141, 141);
+    --fade-light: #f6f8fa3c;
+    --color: rgb(145, 145, 246);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #222;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+}
+
+.content {
+    height: 100vh;
+    background-image: url("flower.jpg");
+    background-color: #333;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+
+/* navigation style here */
+
+header {
+    background-color: var(--background);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--background);
+    /* display: none; */
+    /* to add transition */
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 16px;
+    margin-left: 16px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+.nav-check:checked~nav {
+    /* display: block; */
+    transform: scale(1, 1);
+}
+
+.nav-check:checked~nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+.nav-check {
+    display: none;
+}
+
+.nav-check-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 16px;
+    /* border: 1px solid red; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-check-label span,
+.nav-check-label span::before,
+.nav-check-label span::after {
+    display: block;
+    height: 2px;
+    background-color: white;
+    width: 30px;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-check-label span::before,
+.nav-check-label span::after {
+    content: "";
+    position: absolute;
+}
+
+.nav-check-label span::before {
+    bottom: 7px;
+}
+
+.nav-check-label span::after {
+    top: 7px;
+}
+
+@media screen and (min-width: 720px) {
+    .nav-check-label {
+        display: none;
+    }
+    header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    nav {
+        all: unset;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav li {
+        margin-left: 50px;
+        margin-bottom: 0;
+    }
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
+    nav a::before {
+        content: "";
+        display: block;
+        height: 5px;
+        border-radius: 20px;
+        background-color: rgb(244, 225, 13);
+        position: absolute;
+        top: -20px;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transform-origin: right;
+        transition: transform ease-in-out 350ms;
+    }
+    nav a:hover::before {
+        transform: scale(1, 1);
+    }
+}
+
+
+/* content login  start  */
+
+.login-wrapper {
+    width: 450px;
+    height: 350px;
+    padding: 25px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--fade-light);
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px;
+}
+
+.input-label {
+    width: 450px;
+    font-weight: 200;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+}
+
+.input-label a {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    font-size: 16px;
+    justify-content: flex-end;
+}
+
+input {
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+    margin: 10px;
+}
+
+input:focus {
+    background-color: var(--background);
+}
+
+.submit-btn {
+    width: 300px;
+    float: right;
+    padding: 5px 0px;
+    font-size: medium;
+    border-radius: 5px;
+    border-style: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: var(--background);
+    color: white;
+}

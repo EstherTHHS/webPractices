@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(169, 252, 252);
+}
+
+.board {
+    background-color: rgb(174, 200, 246);
+    border-radius: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    /* default flex direction is row direction: ; */
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    margin: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+#turn {
+    color: tomato;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+#winner {
+    color: blueviolet;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
+}

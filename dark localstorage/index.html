@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HamburgarMenu</title>
+    <script src="jquery3.6.0.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body id="body">
+    <header>
+
+        <h1 class="logo">Logo</h1>
+        <input type="checkbox" id="nav-check" class="nav-check">
+        <label for="nav-check" class="nav-check-label">
+            <span></span>
+        </label>
+        <nav>
+
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><button id="mode">change</button></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+
+        <div class="login-wrapper">
+            <h2>Sign in</h2>
+            <div class="input-box">
+                <div class="input-label" id="user">Username</div>
+                <input type="text" required id="name">
+            </div>
+
+            <div class="input-box">
+                <div class="input-label">
+                    <span>Password</span>
+                    <span><a href="#" id="user1">Forget Password?</a></span>
+                </div>
+                <input type="text" id="email">
+            </div>
+
+            <button class="submit-btn" id="save">
+                save
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

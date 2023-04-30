@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main_div {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(251, 222, 185);
+}
+
+#randomChar {
+    font-size: 2.5rem;
+    letter-spacing: 20px;
+}
+
+.typeChars {
+    display: flex;
+    flex-direction: row;
+}
+
+#key1,
+#key2,
+#key3 {
+    font-size: 2.5rem;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    background-color: rgb(123, 165, 151);
+    display: none;
+}
+
+
+/* .checkTypeChar {
+    display: none;
+} */

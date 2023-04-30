@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game2</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="menu">
+            <div class="score">
+                <span><b>Score:</b></span>
+                <span id="scoreans" class="scoreAns"></span>
+            </div>
+            <div class="btnstart1">
+                <button id="btnstart" class="btnstart activestart" onclick=start()>Start</button>
+            </div>
+            <div class="time">
+                <span><b>Time:</b></span>
+                <span id="tAns" class="timeAns"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="question">
+            <span id="q1"></span>
+            <span>=</span>
+        </div>
+        <div class="cards">
+            <button id="card1" class="card1 cardinactivestop " onclick="card1()" disabled></button>
+
+            <button id="card2" class="card2 cardinactivestop " onclick="card2()" disabled></button>
+
+            <button id="card3" class="card3 cardinactivestop " onclick="card3()" disabled></button>
+        </div>
+
+        <div>
+            <button id="btnstop" class="btnstop inactivestop " onclick="stop()" disabled>Stop</button>
+        </div>
+        <h3>History</h3>
+        <p id="list"></p>
+    </div>
+</body>
+
+</html>

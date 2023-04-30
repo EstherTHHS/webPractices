@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card_div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_div>div {
+    width: 100px;
+    height: 130px;
+    margin: 20px;
+    border-radius: 8%;
+    background-color: rgb(123, 165, 151);
+}

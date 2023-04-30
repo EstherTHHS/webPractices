@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyBoard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script2.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="first-box">
+            <div class="layer">
+                <div class="datainput" id="dataShowbox"></div>
+            </div>
+            <div class="layer ">
+                <input type="text" id="enternumber" class="enternum ">
+            </div>
+            <div class="change">
+                <button class="changemethod" onclick="charAt()">charAt()</button>
+                <button class="changemethod" onclick="charCodeAt()">charCodeAt() </button>
+                <button class="changemethod" onclick="toUpper()">toUpperCase()</button>
+                <button class="changemethod" onclick="toLower()">toLowerCase()</button>
+                <button class="changemethod" onclick="includes()">includes() </button>
+                <button class="changemethod" onclick="indexOf()">indexOf() </button>
+                <button class="changemethod" onclick="lastindexOf()">LastindexOf() </button>
+                <button class="changemethod" onclick="startsWith()">startsWith()</button>
+                <button class="changemethod" onclick="endsWith()">endsWith()</button>
+                <button class="changemethod" onclick="trim()">trim()</button>
+            </div>
+        </div>
+
+
+        <div class="keyboard">
+
+            <input type="checkbox" id="check" hidden>
+            <label for="check" class="caplock">Caplock</label>
+
+            <button class="btn" value="1" onclick="pressfun(this)">1</button>
+            <button class="btn" value="2" onclick="pressfun(this)">2</button>
+            <button class="btn" value="3" onclick="pressfun(this)">3</button>
+            <button class="btn" value="4" onclick="pressfun(this)">4</button>
+            <button class="btn" value="5" onclick="pressfun(this)">5</button>
+            <button class="btn" value="6" onclick="pressfun(this)">6</button>
+            <button class="btn" value="7" onclick="pressfun(this)">7</button>
+            <button class="btn" value="8" onclick="pressfun(this)">8</button>
+            <button class="btn" value="9" onclick="pressfun(this)">9</button>
+            <button class="btn" value="0" onclick="pressfun(this)">0</button>
+
+
+
+            <button class="btn" onclick="pressfun(this)">q</button>
+            <button class="btn" onclick="pressfun(this)">w</button>
+            <button class="btn" onclick="pressfun(this)">e</button>
+            <button class="btn" onclick="pressfun(this)">r</button>
+            <button class="btn" onclick="pressfun(this)">t</button>
+            <button class="btn" onclick="pressfun(this)">y</button>
+            <button class="btn" onclick="pressfun(this)">u</button>
+            <button class="btn" onclick="pressfun(this)">i</button>
+            <button class="btn" onclick="pressfun(this)">o</button>
+            <button class="btn" onclick="pressfun(this)">p</button>
+
+
+
+
+            <button class="btn" onclick="pressfun(this)">a</button>
+            <button class="btn" onclick="pressfun(this)">s</button>
+            <button class="btn" onclick="pressfun(this)">d</button>
+            <button class="btn" onclick="pressfun(this)">f</button>
+            <button class="btn" onclick="pressfun(this)">g</button>
+            <button class="btn" onclick="pressfun(this)">h</button>
+            <button class="btn" onclick="pressfun(this)">j</button>
+            <button class="btn" onclick="pressfun(this)">k</button>
+            <button class="btn" onclick="pressfun(this)">l</button>
+
+
+
+            <button class="btn" onclick="pressfun(this)">z</button>
+            <button class="btn" onclick="pressfun(this)">x</button>
+            <button class="btn" onclick="pressfun(this)">c</button>
+            <button class="btn" onclick="pressfun(this)">v</button>
+            <button class="btn" onclick="pressfun(this)">b</button>
+            <button class="btn" onclick="pressfun(this)">n</button>
+            <button class="btn" onclick="pressfun(this)">m</button>
+
+
+            <button class="btn spacebar" onclick="spaceBar()">space</button>
+            <button class="btn clrBtn" onclick="clearBtn()">Clear</button>
+
+
+
+        </div>>
+</body>
+
+</html>

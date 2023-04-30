@@ -1,0 +1,15 @@
+{
+  "name": "Smith",
+  "age": 28,
+  "married": false,
+  "own": ["car", "bike"],
+  "firneds": [
+    { "name": "john", "age": 30 },
+
+    {
+      "name": "mary",
+      "age": 25
+    }
+  ],
+  "job": null
+}

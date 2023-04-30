@@ -1,0 +1,60 @@
+:root {
+  --firstColor: #c4fcef;
+  --secondaryColor: #064037;
+  --thirdColor: #8a39ab;
+  --textColorOne: #e8f3f1;
+  --textColorTwo: #000;
+  --fontFamilyJosef: "Josefin Sans";
+  font-family: "Josefin Sans", sans-serif;
+  --submitBtnFontSize: 2em;
+}
+
+/* font family Josefin Sans, Marcellus ,Playball*/
+/* <style>
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Marcellus&family=Playball&display=swap');
+</style>  */
+
+/* submit button */
+.submit-button {
+  margin-top: 10%;
+  height: 50px;
+  width: 15%;
+  background-color: var(--thirdColor);
+  font-family: var(--fontFamilyJosef);
+  color: var(--textColorOne);
+  border: #8a39ab;
+  font-size: 20px;
+  border-radius: 16px;
+}
+
+.submit-button:focus {
+  background-color: var(--firstColor);
+  color: var(--thirdColor);
+  border: 3px solid var(--thirdColor);
+  border-radius: 16px;
+}
+
+.dropdown {
+  margin: 20px;
+  width: 25%;
+  background-color: var(--thirdColor);
+  color: var(--textColorOne);
+  border-radius: 12px;
+}
+
+.dropdown-item {
+  color: var(--secondaryColor) !important;
+  font-weight: 300;
+}
+
+.form-check-input:checked {
+  background-color: #8a39ab;
+  border-color: #8a39ab;
+}
+
+/* <!-- Styles --> */
+
+#chartdiv {
+  width: 50%;
+  height: 500px;
+}

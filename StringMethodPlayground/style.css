@@ -1,0 +1,234 @@
+:root {
+  --first_color: #0e7851ff;
+  --second_color: #74e977ff;
+  --third_color: #4edb6cff;
+  --fourth_color: black;
+  --fifth_color: yellow;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+    to right,
+    var(--first_color),
+    var(--fourth_color),
+    var(--fourth_color),
+    var(--first_color)
+  );
+ background-position: center;
+}
+.alphabet_uppercase {
+  text-transform: uppercase;
+}
+.header {
+  color: var(--fifth_color);
+  text-align: center;
+  margin-top: 3%;
+}
+/* Type Input Box */
+#type_input {
+  position: absolute;
+  bottom: 75vh;
+  margin-left: 5%;
+  background-color: var(--third_color);
+  width: 90%;
+  height: 20px;
+  padding: 5px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+/* Input Answer*/
+.input_answer {
+  position: absolute;
+  width: 100%;
+  bottom: 65vh;
+  height: 10vh;
+  box-sizing: border-box;
+  padding: 0 5% 0 5%;
+}
+#answer_label {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: var(--fifth_color);
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+}
+#answer_box {
+  background-color: var(--third_color);
+  width: 100%;
+  height: 20px;
+  padding: 5px 0;
+  color: var(--fourth_color);
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+}
+/* Input Box */
+.input_box {
+  position: absolute;
+  bottom: 52vh;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 1%;
+}
+.input_alert {
+  margin: 0;
+  padding-left: 6%;
+  color: var(--fifth_color);
+}
+.input_box > span {
+  color: var(--fifth_color);
+}
+#data {
+  width: 50%;
+  background-color: var(--third_color);
+  border: none;
+  height: 30px;
+}
+/* Function, Keyboard,numbers , alphabet */
+.function {
+  height: 10vh;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 45vh;
+  padding-top: 3vh;
+  border-radius: 10px;
+}
+.number,
+.alphabet,
+#clear,
+#caps_lock,
+#space,
+.function_btn {
+  background-color: var(--third_color);
+  width: 8.5%;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0.3%;
+  border-radius: 10px;
+  border: none;
+  box-shadow:
+   1px 2px  2px white;
+}
+.function_btn {
+  background-color: var(--second_color);
+  width: 9%;
+  color: var(--fourth_color);
+}
+.keyboard {
+  height: 45vh;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  padding: 20px 0;
+}
+.number_box,
+.first_line_alphabet,
+.second_line_alphabet,
+.third_line_alphabet,
+.space {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* Caps_lock , Space , Clear */
+#caps_lock {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+#checkbox {
+  display: none;
+}
+#checkbox:checked + label > span {
+  color: var(--second_color);
+}
+#space {
+  width: 50%;
+}
+#space:active,
+.number:active,
+.alphabet:active,
+#clear:active,
+.function_btn:active
+ {
+  transform: translate(1px , 2px);
+  box-shadow: none;
+}
+#caps_lock:active{
+  transform: translate(1px , 2px);
+  box-shadow: none;
+}
+#clear,
+#caps_lock {
+  width: 13%;
+}
+/* Caps_Lock & Backspace Icon */
+#backspace_icon {
+  display: none;
+}
+#caps_lock_icon {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .clear {
+    display: none;
+  }
+  #caps_lock {
+    padding: 15px;
+  }
+  #backspace_icon {
+    display: inline;
+  }
+  .number,
+  .alphabet,
+  #clear,
+  #caps_lock,
+  #space {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header {
+    font-size: 24px;
+  }
+  #type_input {
+    bottom: 82vh;
+  }
+  #caps_lock_text {
+    display: none;
+  }
+  #caps_lock_icon {
+    display: inline;
+  }
+  .function_btn {
+    width: 40%;
+  }
+  .function {
+    background-color: var(--fourth_color);
+    height: 17vh;
+    width: 90%;
+    margin-left: 5%;
+    bottom: 45vh;
+    padding: 2vh 20px 0 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    border: 10px solid var(--fourth_color);
+  }
+  .input_box {
+    bottom: 62vh;
+  }
+  .input_alert {
+    font-size: 10px;
+    padding-left: 0;
+  }
+  .input_answer {
+    bottom: 72vh;
+  }
+}

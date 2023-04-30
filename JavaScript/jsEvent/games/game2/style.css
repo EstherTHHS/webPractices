@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    font-family: serif;
+}
+
+.score {
+    float: left;
+    margin: 20px;
+    padding: 10px;
+    font-size: large;
+    font-weight: 300;
+}
+
+.btnstart {
+    float: left;
+    background-color: white;
+    border-radius: 20px;
+    margin: 20px 450px;
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.time {
+    float: right;
+    margin: 20px;
+    padding: 10px;
+    font-size: large;
+    font-weight: 300;
+}
+
+.activestart {
+    background-color: rgb(122, 201, 122);
+}
+
+.inactivestart {
+    background-color: gray;
+}
+
+.activestop {
+    background-color: red;
+}
+
+.inactivestop {
+    background-color: gray;
+}
+
+.cardactivestart {
+    background-color: aqua;
+}
+
+.cardinactivestop {
+    background-color: gray;
+}
+
+.body {
+    clear: both;
+    margin: 50px;
+}
+
+.question {
+    margin: 0 40%;
+    float: left;
+    width: 40%;
+    height: 40px;
+    font-size: large;
+    font-weight: 300;
+}
+
+.cards {
+    text-align: center;
+}
+
+.card1 {
+    width: 200px;
+    height: 300px;
+    border-radius: 10%;
+    font-size: large;
+    font-weight: 300;
+}
+
+.card2 {
+    width: 200px;
+    height: 300px;
+    border-radius: 10%;
+    margin: 10px 50px;
+    font-size: large;
+    font-weight: 300;
+}
+
+.card3 {
+    width: 200px;
+    height: 300px;
+    border-radius: 10%;
+    font-size: large;
+    font-weight: 300;
+}
+
+.btnstop {
+    color: white;
+    margin: 20px 500px;
+    width: 250px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.list {
+    clear: both;
+    font-size: large;
+    font-weight: 300;
+}

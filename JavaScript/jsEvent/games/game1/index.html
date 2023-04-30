@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="menu">
+            <div class="title">Calculator Brain</div>
+
+            <div class="start">
+                <button id="btnstart" class="btnstart activestart" onclick="start()">Start</button>
+            </div>
+
+            <div class="stop">
+                <button id="btnstop" class="btnstop inactivestop" onclick="stop()" disabled>Stop</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="body">
+        <fieldset class="question">
+            <legend>Question</legend>
+            <span id="q1"></span>
+            <span class="arrow">=></span>
+        </fieldset>
+
+        <fieldset class="question">
+            <legend>Answer</legend>
+            <input id="answerbox" type="text" disabled>
+        </fieldset>
+
+        <button id="okbtn" disabled onclick="checkanswer()">OK</button>
+        <h3 class="list">History</h3>
+        <ol id="list">
+
+        </ol>
+    </div>
+
+</body>
+
+</html>
